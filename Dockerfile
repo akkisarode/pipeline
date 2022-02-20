@@ -7,6 +7,6 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page275/ha
 WORKDIR /var/www/html
 RUN unzip hangover.zip
 RUN cp -rvf hangover-master/* .
-RUN rm -rf hangover hangover.zip
+RUN rm -rf hangover-matser hangover.zip
 CMD ["/usr/dbin/httpd" , "-D" , "FOREGROUND"]
 EXPOSE 80
