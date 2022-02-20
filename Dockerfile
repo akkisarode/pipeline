@@ -8,5 +8,5 @@ WORKDIR /var/www/html
 RUN unzip hangover.zip
 RUN cp -rvf hangover-master/* .
 RUN rm -rf hangover-matser hangover.zip
-CMD ["/usr/dbin/httpd" , "-D" , "FOREGROUND"]
+CMD "/usr/dbin/httpd" , "-D" , "FOREGROUND"
 EXPOSE 80
